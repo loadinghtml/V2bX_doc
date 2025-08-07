@@ -116,6 +116,9 @@
 			// 计入设备数限制的流量阈值，单位kB，节点用户每次上报流量超出该值时记录为1个设备
 			"DeviceOnlineMinTraffic": 100,
 
+			// 最低上报流量阈值，单位kB，节点每个推送间隔内，用户消耗流量大于该值时才发送到面板，不足则累计到下一间隔
+			"MinReportTraffic": 0,
+
 			// 开启 TCP Fast Open
 			"EnableTFO": true,
 
